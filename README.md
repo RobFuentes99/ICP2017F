@@ -1,4 +1,2 @@
 # ICP2017F
-**Name:**Rob Fuentes
-**UT EID:**
-[Test Link](youtube.com)
+[Test Link](http://youtube.com)
