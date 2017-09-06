@@ -1,3 +1,3 @@
 **This is a test line.**
-*Eric* is *cool*
+*Eric* is *cool.*
 *nuzzles*
