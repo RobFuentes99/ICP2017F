@@ -16,7 +16,7 @@ __ICP Class Position:__ Student
 
 __Course Webpage:__ http://shahmoradi.org/ICP2017F/
 
-__Photo:__ [](https://imgur.com/LUEhcWq)
+__Photo:__ ![](https://imgur.com/LUEhcWq)
 
 # Description of the project's content
 
