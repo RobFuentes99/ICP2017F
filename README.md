@@ -21,3 +21,10 @@ __Photo:__
 # Description of the project's content
 
 This repository contains my homework, quizzes, and virtually every effort that I have made for [ICP2017F class](http://www.shahmoradi.org/ICP2017F/).  The structure of the project is the following:
+
+* homework: 
+This directory contains all my homework sub* missions, each of which is a folder properly named with homework number, containing the homework submissions.
+* quiz:
+This directory contains all my quiz submissions, each of which is a folder properly named with quiz number, containing the quiz submission.
+* exam:
+This directory contains all my exam submissions, each of which is a folder properly named with exam number, containing the exam submission.
