@@ -16,7 +16,7 @@ __ICP Class Position:__ Student
 
 __Course Webpage:__ http://shahmoradi.org/ICP2017F/
 
-__Photo:__ [](images/table 1-1.png?raw=true)
+__Photo:__ file:///C:\\Users\\Robbie\\Pictures\\Portrait
 
 # Description of the project's content
 
