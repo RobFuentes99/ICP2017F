@@ -29,3 +29,9 @@ This directory contains all my quiz submissions, each of which is a folder prope
 * [Exam]:
 This directory contains all my exam submissions, each of which is a folder properly named with exam number, containing the exam submission.
 
+
+For questions and troubleshooting, please contact:
+
+Rob Fuentes
+
+rob.fuentes@utexas.edu
