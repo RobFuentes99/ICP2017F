@@ -1,7 +1,6 @@
 # ICP2017F - Introduction to Computer Programming
 
-__Name:__ Rob Fuentes
-
+__Name:__ Rob Fuentes  
 __UT EID:__ rjf2248
 
 __Email:__ rob.fuentes@utexas.edu
