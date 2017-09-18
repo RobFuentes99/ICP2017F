@@ -8,7 +8,7 @@ __University:__ [The University of Texas at Austin](http://utexas.edu)
 __Level:__ Undergraduate - Freshman (1st year)  
 __ICP Class Position:__ Student  
 __Course Webpage:__ http://shahmoradi.org/ICP2017F/  
-__Photo:__ ![me](https://i.imgur.com/LUEhcWq.jpg)  
+__Photo:__ <img src=![me](https://i.imgur.com/LUEhcWq.jpg) width="300" height="300"/>  
 # Description of the project's content
 
 This repository contains my homework, quizzes, and virtually every effort that I have made for [ICP2017F class](http://www.shahmoradi.org/ICP2017F/).  The structure of the project is the following:  
