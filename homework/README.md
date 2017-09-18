@@ -1,13 +1,13 @@
 (A)  
 Input: git branch test1 
 git branch test2  
-Output: <none>  
+Output: none  
 (B)  
 Input: git checkout test 1  
 Output: switched to branch 'test1'  
 (C)  
-Input:<edited file>  
-Output:<none>  
+Input:edited file   
+Output:none  
 (D)  
 Input: git stage test.txt  
 git commit test.txt
@@ -20,8 +20,8 @@ Output:
 readme.md  
 Explanation: I did not see the file 'test.txt' because it was committed to the branch test1, and I was on the branch test2.  
 (F)  
-Input:<edited file>   
-Output:<none>  
+Input:edited file    
+Output:none  
 (G)  
 Input: git checkout test1  
 Output: error: The following untracked working tree files would be overwritten by checkout:  
