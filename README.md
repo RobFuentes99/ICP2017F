@@ -1,4 +1,4 @@
-# ICP2017F - Introduction to Computer Programming
+## ICP2017F - Introduction to Computer Programming
 
 __Name:__ Rob Fuentes  
 __UT EID:__ rjf2248  
@@ -10,7 +10,7 @@ __ICP Class Position:__ Student
 __Course Webpage:__ http://shahmoradi.org/ICP2017F/  
 __Photo:__  
 ![me](https://github.com/RobFuentes99/ICP2017F/blob/master/Portrait%20(2).jpg)
-# Description of the project's content
+## Description of the project's content
 
 This repository contains my homework, quizzes, and virtually every effort that I have made for [ICP2017F class](http://www.shahmoradi.org/ICP2017F/).  The structure of the project is the following:  
 * [Homework](./hw/):
