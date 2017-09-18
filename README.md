@@ -8,12 +8,13 @@ __University:__ [The University of Texas at Austin](http://utexas.edu)
 __Level:__ Undergraduate - Freshman (1st year)  
 __ICP Class Position:__ Student  
 __Course Webpage:__ http://shahmoradi.org/ICP2017F/  
-__Photo:__   
+__Photo:__  
+![me](https://github.com/RobFuentes99/ICP2017F/blob/master/Portrait%20(2).jpg)
 # Description of the project's content
 
 This repository contains my homework, quizzes, and virtually every effort that I have made for [ICP2017F class](http://www.shahmoradi.org/ICP2017F/).  The structure of the project is the following:  
 * [Homework](./hw/):
-This directory contains all my homework sub* missions, each of which is a folder properly named with homework number, containing the homework submissions.
+This directory contains all my homework submissions, each of which is a folder properly named with homework number, containing the homework submissions.
 * [Quiz](./quiz/):
 This directory contains all my quiz submissions, each of which is a folder properly named with quiz number, containing the quiz submission.
 * [Exam](./exam/):
