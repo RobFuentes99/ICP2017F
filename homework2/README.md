@@ -35,7 +35,7 @@ assigns value of 'abcd' to variable e
 
 assigns value of 'abcd' to variable f (same as variable e)  
 
->> g = {‘a’ ‘b’ ‘c’ ‘d’}  
+>> g = {â€˜aâ€™ â€˜bâ€™ â€˜câ€™ â€˜dâ€™}  
 
 assigns 1x4 cell array, presumably of value a, b, c, and d, to variable g  
 
@@ -63,35 +63,51 @@ Thus, the max integer for int16 is 32767, and the max integer for int32 is 21474
 
 3.  
 >> 1\2  
+
 prediction: I think matlab will suggest I meant to type a backslash, the true division sign.  
 actual: ans = 2  
 explanation: It actually divided, but backwards. Instead of the first number being divided by the second one, the opposite occurred.  
+
 >>1/2  
+
 p: ans = .5   
 a: ans = .5  
 e: Simple division  
+
 >>int8(1/2)  
+
 p: ans = 1    
 a: ans = 1  
 e: The answer is .5, but the integer function rounds it up to the closest integer, in this case 1.  
+
 >>int8(1/3)  
+
 p: ans = 0  
 a: ans = 0  
 e: The answer is .333, so the function rounds down to the closest integer, 0.  
+
 >>-5^2  
+
 p: ans = -25  
 a: ans = -25  
 e: The negative sign is outside of the exponent, and so it does not go away with squaring.  
+
 >>(-5)^2  
+
 p: ans = 25  
 a: ans = 25  
-e: The negative sign was squared since it was included in the parentheses, which makes the answer positive.  
+e: The negative sign was squared since it was included in the parentheses, which makes the answer positive. 
+
 >>10-6/2  
+
 p: ans = 7  
 a: ans = 7  
 e: PEMDAS! The order of operations requires division to be committed before the subtraction.  
+
 >>5*4/2*3  
+
 p: ans = 30  
 a: ans = 30  
 e: Once again, PEMDAS.  
+
 
