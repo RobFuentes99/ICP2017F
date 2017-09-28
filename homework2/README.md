@@ -51,6 +51,7 @@ states variables, except this time the sizes and classes are significantly bigge
 2.  
 If you input an integer larger than the limit of an int function, the number that results is always the highest capacity integer. For instance, when you input int8(1234), the largest number that will result is 127, the maximum integer.  
 For a smaller integer than the limit, there is no issue, and the number comes out fine.  For instance, int8(100) = 100  
+
 >>int8(1234)  
 ans = 127  
 >>int8(100)  
@@ -59,6 +60,7 @@ ans = 100
 ans = 32767  
 >>int32(1000000000000)  
 ans = 2147483647  
+
 Thus, the max integer for int16 is 32767, and the max integer for int32 is 2147483647.  
 
 3.  
