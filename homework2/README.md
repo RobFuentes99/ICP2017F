@@ -1,4 +1,4 @@
-1.
+﻿1.
 >> a = 1   
 
 function assigns the value of 1 to variable a  
@@ -112,4 +112,104 @@ p: ans = 30
 a: ans = 30  
 e: Once again, PEMDAS.  
 
+4.  
+(a)  
+>> a = [1,0;2,1]  
+>> b = [-1,2;0,1]  
+>> c = [3;2]  
+>> d = 5  
+
+(b)  
+1.  
+>> a + b  
+ans =  
+  
+     0     2  
+     2     2  
+
+ex: Matlab added the values in each corresponding coordinate in matrices a & b.  
+
+2.  
+>> a.* b  
+ans =  
+  
+    -1     0  
+     0     1  
+
+ex: Matlab multiplied the values in each corresponding coordinate in matrices a & b.  
+
+3.  
+>> a * b  
+ans =  
+  
+    -1     2  
+    -2     5  
+
+ex: Matlab multiplied the entire matrices, instead of the corresponding values. This is the 'correct' multiplication of matrices mathematically.  
+
+4.  
+>> a * c  
+ans =  
+  
+     3  
+     8  
+
+ex: Matlab multiplied the matrix a with the matrix c, resulting in a 1x2 matrix.  
+
+5.  
+>> a + c  
+ans =  
+  
+     4     3  
+     4     3  
+
+ex: Matlab added the values of matrix c to each column of matrix a.  
+
+6.  
+>> a + d  
+ans =  
+  
+     6     5  
+     7     6  
+
+ex: Matlab added d, valued at 5, to every value in the a matrix.  
+
+7.  
+>>  a .* d  
+ans =  
+  
+     5     0  
+    10     5  
+
+ex: Matlab multiplied each value in the matrix by d, valued at 5.  
+
+8.  
+>> a * d  
+ans =  
+  
+     5     0  
+    10     5  
+
+ex: Matlab multiplied each value by d, valued at 5. Though it is the same result of a .* d, both are mathematically correct.  
+
+5.  
+>> a = [2,0,0;0,2,0;0,0,2]  
+
+or  
+
+>> d = [2,2,2]  
+>> a = diag(d)  
+
+or  
+
+>> a = 2 * eye(3)  
+
+6.  
+I fixed the line of code, and when I ran it the message "Persian is not the same as Spanish" was displayed. This is because I coded 'disp('Persian is not the same as Spanish') at the end of the line.  
+
+7.  
+Running the program resulted in a pop-up figure of sin(x).  
+
+8.  
+When attempting to run the 'myscript' program from the original directory, Matlab gives the error message "Undefined function or variable 'myscript'" which indicates the error of that program not existing in that directory, only in mynewdir.
 
