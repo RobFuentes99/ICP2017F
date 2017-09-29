@@ -208,7 +208,7 @@ or
 I fixed the line of code, and when I ran it the message "Persian is not the same as Spanish" was displayed. This is because I coded 'disp('Persian is not the same as Spanish') at the end of the line.  
 
 7.  
-Running the program resulted in a pop-up figure of sin(x).  
+Running the program resulted in a pop-up figure of a sinusoidal, oscillating function.
 
 8.  
 When attempting to run the 'myscript' program from the original directory, Matlab gives the error message "Undefined function or variable 'myscript'" which indicates the error of that program not existing in that directory, only in mynewdir.
