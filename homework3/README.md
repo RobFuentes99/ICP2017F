@@ -15,7 +15,7 @@ term2 = exp(inside);
 gaussian = term1*term2;  
 disp(gaussian)  
   
-%Program now asks input values and then presents the answer.  
+%Program now asks input values and then presents the answer.  swi
 
 Answer generated:  
 >> Q1  
@@ -63,24 +63,136 @@ Time needed to cook egg in seconds:
   315.2179  
   
 3.  
+Function for generating Polar coordinates given Cartesian coordinate:  
+  
+function polar = getPolar(cart)  
+if(isfield(cart, 'x') == 1 && isfield(cart, 'y') == 1)  
+    polar.r = sqrt(cart.x^2 + cart.y^2);  
+    polar.phi = atan(cart.y / cart.x);  
+else  
+    polar.r = 0;  
+    polar.phi = 0;  
+    disp('Input is not valid, please input a value with an x and y field.')  
+end  
+end  
 
+Function for generating Cartesian coordinate given Polar coordinate:  
+function cart = getCart(polar)  
+if(isfield(polar, 'r') == 1 && isfield(polar, 'phi') == 1)  
+    cart.x = (polar.r)*cos(polar.phi);  
+    cart.y = (polar.r)*sin(polar.phi);  
+else  
+    cart.x = 0;  
+    cart.y = 0;  
+    disp('Input is not valid, please input a value with an r and phi field.')  
+end  
+end  
+  
 4.  
-
+Function determining size of directory:
+function b = getSize(path)  
+x = dir(path);  %which path is being accessed
+b = sum([x.bytes]);  
+end  
 
 5.  
-%Coding for Question 5 - Fibonacci's number  
-  
-function y = getFib(n_int) %set function as equal to a variable, y  
+Function for determining Fibonacci's number for a value: 
+ 
+function Fib  
+in = input('Please enter a non-negative integer or type stop: ', 's');  
+if(strcmp(in, 'stop') == 1)  
+    return  
+else  
+    number = str2double(in);  
+    if(number == round(number) && number >= 0)  
+        disp(getFib(number));  
+        Fib;  
+    else  
+        disp('The input argument is not a non-negative integer!');  
+        Fib;  
+    end  
+end  
+function y = getFib(n_int) 
 if (n_int) < 0  
     disp('This number is not a non-negative integer') %Fibonacci's number starts at 0.  
 elseif (n_int) == 0  
-    y = 0; %first value is 0  
+    y = 0;   
 elseif (n_int) == 1  
-    y = 1; %second value is 1  
+    y = 1;   
 elseif (n_int) > 1  
-    y = getFib((n_int) - 1) + getFib((n_int) - 2); %after 0 & 1, Fibonacci's number follows this pattern.  
-elseif (n_int) == ischar  
-    disp('This is not a non-negative integer') %preventing inputs from being non-numerical  
+    y = getFib((n_int) - 1) + getFib((n_int) - 2);   
+end  
+
+6. 
+Function that calculates Area of triangle given vertices (x1, x2, x3, y1, y2, y3):  
+
+function area = getTriangleArea(vertices)  
+    term1 = vertices(2)*vertices(6);  
+    term2 = vertices(3)*vertices(5);  
+    term3 = vertices(1)*vertices(6);  
+    term4 = vertices(3)*vertices(4);  
+    term5 = vertices(1)*vertices(5);  
+    term6 = vertices(2)*vertices(4);  
+    area = 0.5*abs(term1-term2-term3+term4+term5-term6);  
+end   
+
+7.  
+Function to determine if input argument is prime: 
+
+function [ Status ] = isPrime(varargin)  
+switch nargin  
+    case 1  
+        isPrime(varargin{1},2)  
+    case 2  
+        if varargin{1}==2||mod(varargin{1},varargin{2})~=0&&varargin{1}- 1  
+            if varargin{2} < sqrt(varargin{1})  
+                isPrime(varargin{1},varargin{2}+1)  
+            else   
+                Status=true;  
+            end  
+        else  
+            Status=false;  
+        end  
 end  
 end  
   
+8.  
+Function generator:  
+
+function output = genFunc(varargin)  
+    if(nargin>3)  
+        disp('You can only display 3 inputs!');  
+        return  
+    else  
+        switch nargin  
+            case 1  
+                if(isreal(varargin{1}))  
+                    a = varargin{1};  
+                    b = 0;  
+                    c = 0;  
+                else  
+                    disp('You must enter real numbers');  
+                end  
+            case 2  
+                if(isreal(varargin{1}) && isreal(varargin{2}))  
+                    a = varargin{1};  
+                    b = varargin{2};  
+                    c = 0;  
+                else  
+                    disp('You must enter real numbers')  
+                end  
+            case 3   
+                if(isreal(varargin{1}) && isreal(varargin{2}) && isreal(varargin{3}))  
+                    a = varargin{1};  
+                    b = varargin{2};  
+                    c = varargin{3};  
+                else  
+                    disp('You must enter real numbers')  
+                end  
+        end  
+    end  
+    output = evaluateFunction(a,b,c);  
+end  
+function out = evaluateFunction(a,b,c)  
+out = @(x) a.*x^2+b.x+c;  
+end  
