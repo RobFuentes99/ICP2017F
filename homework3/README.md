@@ -26,6 +26,47 @@ enter x value: 1
 
 This answer checks out with the normpdf function on Matlab.  
 
+2.  
+%Coding for Question 2 - the egg function.  
+  
+%Setting up inputs.  
+Tw = input('enter water temperature: ');  
+To = input('enter initial egg temperature: ');  
+Ty = input('enter final achieved temperature: ');  
+L = 67; %Defining mass of a large egg  
+S = 47;  %Defining mass of a small egg  
+M = input('is the egg large(L) or small(S): ');  
+p = 1.038;  %Setting values to variables in the equation.  
+C = 3.7;  
+K = (5.4*10^(-3));  
+inside = .76*((To - Tw)/(Ty - Tw)); %Split up the equation into easier parts.  
+top = M^(2/3)*C*p^(1/3);  
+bottom = K*(pi^2)*((4*pi)/3)^(2/3);  
+solution = (top / bottom) * log(inside);  
+disp('Time needed to cook egg in seconds: ') %Answer display  
+disp(solution)  
+
+Calculating time for a large egg from a fridge:  
+enter water temperature: 100  
+enter initial egg temperature: 4  
+enter final achieved temperature: 70  
+is the egg large(L) or small(S): L  
+Time needed to cook egg in seconds:   
+  396.5763  
+
+Calculating time for a large egg from room temperature:  
+enter water temperature: 100  
+enter initial egg temperature: 20  
+enter final achieved temperature: 70  
+is the egg large(L) or small(S): L  
+Time needed to cook egg in seconds:   
+  315.2179  
+  
+3.  
+
+4.  
+
+
 5.  
 %Coding for Question 5 - Fibonacci's number  
   
