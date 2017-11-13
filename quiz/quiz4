@@ -1,0 +1,52 @@
+This is quiz 4.  
+
+1.  
+a.  
+function output = getFacWhile(n)
+if n == 0
+    output = 1;
+elseif n >=1
+    new = n;
+    while n > 1
+        output = new * (new - 1);
+        new = output; 
+    end
+    disp(output)
+end
+
+b. 
+function output = getFacFor(n)  
+stringlength = length(n);  
+if n == 0  
+    output = 1;  
+elseif n >=1  
+    new = (n-1);  
+    old = n;  
+    for i = stringlength:-1:1  
+        output = old * new;  
+        old = output;  
+    end     
+end  
+
+c.  
+
+
+2.  
+function output = getFacFor(n)  
+nLength = length(n);  
+if n == 0  
+    output = 1;  
+elseif n >=1  
+    new = (n-1);  
+    old = n;  
+    for i = nLength:-1:1  
+        output = old * new;  
+        old = output;  
+        new = output - 1;  
+    end     
+    fFor = @() getFacFor(n);  
+    tFor = timeit(fFor);  
+    disp(['average runtime: ', num2str(tFor)])  
+end  
+
+3.  
