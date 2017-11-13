@@ -7,7 +7,10 @@ function fib()
         n = str2double(n);
         if isreal(n)
             if n>=0 && round(n)==n
-                disp(['fib(',num2str(n),') = ',num2str(getFib(n))]);
+                disp(['fib(',num2str(n),') = ',num2str(getFib(n))]);  
+                fFib = @() getFib(n);
+                tFib = timeit(fFib);
+                disp(['average runtime: ', num2str(tFib)])
                 fib()
                 return
             end
@@ -22,12 +25,7 @@ function fib()
         elseif n_int == 1
             fib = 1;
         else
-            fib = 1;
-            oldFib = 0;
-            for i = 2:(n_int - 1)
-                fib = fib + oldFib;
-                oldFib = fib;
-            end
+            fib = getFib(n_int-1) + getFib(n_int-2);
         end
     end
 end
