@@ -1,4 +1,0 @@
-function convertedTemp = convertTempVec(input,direction)
-if strcmp(direction, 'C2F') == 1
-    convertedTemp = (input * (9/5)) + 32;
-    
