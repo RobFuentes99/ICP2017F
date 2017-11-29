@@ -1,0 +1,8 @@
+rng(131313);
+students = 99;
+StudentData = readtable('students.csv');
+Triple = randperm(students);
+StudentTriple = cell(3,nstudents/3);
+for i = 1:nstudents/3
+    StudentTriple(:,i) = [ StudentData.Student(Triple(i)),StudentData.Student(Triple(students/i+1))
+        
