@@ -1,0 +1,4 @@
+counter = 2;
+for i = 1:100
+    disp('hello world!')
+end

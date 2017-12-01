@@ -10,5 +10,3 @@ function montePI = monteCarloPi(nPoints)
     end
     montePI = 4*(pointsInCircle/nPoints);
 end
-
-    

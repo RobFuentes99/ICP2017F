@@ -1,0 +1,3 @@
+3.  
+
+gca keywords are indicative of the currently active plot the is graphed, while gcf refers to the current function handle of your script.  Both act as a way of defining a plot/axis without having to completely rewrite something previously written, acting as almost a sort of 'hold on' function.
